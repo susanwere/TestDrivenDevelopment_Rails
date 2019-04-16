@@ -20,9 +20,9 @@ jobs:
             bundle install
 
       - run:
-          name: Tests
-          command: |
-            bundle exec rspec
+          name: Greeting
+          command: bundle exec rspec
 
-      - store_artifacts:
-          path: coverage
+      - run:
+          name: Print the Current Time
+          command: date
