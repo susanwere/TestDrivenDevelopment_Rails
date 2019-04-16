@@ -30,5 +30,7 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
-#Ignore coveralls
+#Ignore coveralls and travis
 .coveralls.yml
+
+Gemfile.lock

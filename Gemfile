@@ -58,4 +58,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #coveralls gemfile
 gem 'coveralls', require: false
-gem 'simplecov', require: false, group: :test
+gem 'simplecov'
+gem 'simplecov-console'
+
