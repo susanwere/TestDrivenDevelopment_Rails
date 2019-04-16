@@ -1,15 +1,17 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-RSpec.describe "products/show", type: :view do
+RSpec.describe 'products/show', type: :view do
   before(:each) do
     @product = assign(:product, Product.create!(
-      :title => "Title",
-      :description => "MyText",
-      :price => "9.99"
-    ))
+                                  title: 'Title',
+                                  description: 'MyText',
+                                  price: '9.99'
+                                ))
   end
 
-  it "renders attributes in <p>" do
+  it 'renders attributes in <p>' do
     render
     expect(rendered).to match(/Title/)
     expect(rendered).to match(/MyText/)
